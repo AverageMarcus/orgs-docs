@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>Managing Package Access · npm Orgs Documentation</title>
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="GitBook 3.2.0">
         
         
         
@@ -72,6 +72,33 @@
     </head>
     <body>
         
+    <header class="anonymous">
+      <div class="header-item header-nav-menu-container">
+        <a href="#" id="npm-expansions" class="npm-expansions" data-event-trigger="click" data-event-name="npm-expansions">node package manager</a>
+
+        <div class="nav-menu-container" role="navigation">
+          <a class="nav-toggle drop-down-menu-toggle" href="#product-navigation"><span class="a11y-only">Toggle Navigation</span>
+            <svg viewBox="0 0 44 44">
+              <rect x="4" y="12" fill="currentColor" width="36" height="2"/>
+              <rect x="4" y="20" fill="currentColor" width="36" height="2"/>
+              <rect x="4" y="28" fill="currentColor" width="36" height="2"/>
+            </svg>
+          </a>
+          <div class="drop-down-menu-container" role="menu">
+            <nav id="product-navigation" class="product-navigation drop-down-menu">
+              <ul class="drop-down-menu-section products-list">
+                <li><a id="nav-enterprise-link" href="https://www.npmjs.com/npm/enterprise">npm Enterprise</a></li>
+                <li><a id="nav-features-link" href="https://www.npmjs.com/features" data-event-trigger="click" data-event-name="features-nav-link">features</a></li>
+                <li><a id="nav-pricing-link" href="https://www.npmjs.com/pricing">pricing</a></li>
+                <li><a id="nav-docs-link" href="https://docs.npmjs.com">documentation</a></li>
+                <li><a id="nav-support-link" href="https://www.npmjs.com/support">support</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    
 <div class="book">
     <div class="book-summary">
         
@@ -309,39 +336,29 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="managing-package-access"><a name="managing-package-access" class="plugin-anchor" href="#managing-package-access"><i class="fa fa-link" aria-hidden="true"></i></a>Managing Package Access</h1>
-<p>The key to managing package access in an Organization is Teams.
+                                <h1 id="managing-package-access"><a name="managing-package-access" class="plugin-anchor" href="#managing-package-access"><i class="fa fa-link" aria-hidden="true"></i></a>Managing Package Access</h1><p>The key to managing package access in an Organization is Teams.
 <strong>Teams are sets of Organization Members that have defined privileges
 for a set of packages that are controlled by the Organization</strong>.
 This page will teach you how to create and manage the 
-membership of your Organization&apos;s team from the web interface.</p>
-<p>If you would like to manage the package access of your Team from
-the npm command line interface (CLI), you can use:</p>
-<pre><code>npm access
-</code></pre><p>Learn more about <code>npm access</code> <a href="https://docs.npmjs.com/cli/access" target="_blank">here</a>.</p>
-<p>If you are looking for how to manage a Team&apos;s Membership, check
-out <a href="managing-teams.html">this doc</a>.</p>
-<p>You will need to have the <strong>Owner</strong> or <strong>Admin</strong> Role to perform this
+membership of your Organization&apos;s team from the web interface.</p><p>If you would like to manage the package access of your Team from
+the npm command line interface (CLI), you can use:</p><pre><code>npm access</code></pre>
+<p>Learn more about <code>npm access</code> <a href="https://docs.npmjs.com/cli/access" target="_blank">here</a>.</p><p>If you are looking for how to manage a Team&apos;s Membership, check
+out <a href="managing-teams.html">this doc</a>.</p><p>You will need to have the <strong>Owner</strong> or <strong>Admin</strong> Role to perform this
 work. For more information on <strong>Roles</strong>, check out the 
-<a href="roles-and-privileges.html">Roles and Privileges doc</a>.</p>
-<hr>
+<a href="roles-and-privileges.html">Roles and Privileges doc</a>.</p><hr>
+
+
 
 <p>To manage the package access of a Team, navigate to your Team&apos;s landing page.
-You can find a list of your teams at <code>https://www.npmjs.com/org/&lt;org_name&gt;/teams</code>.</p>
-<p>From this list, you can click the value in the &quot;packages&quot; column. </p>
-<ul>
-<li>If the Team has members, this value will be the current Package Count. Clicking
-this value will bring you to the Packages tab for this team.</li>
+You can find a list of your teams at <code>https://www.npmjs.com/org/&lt;org_name&gt;/teams</code>.</p><p>From this list, you can click the value in the &quot;packages&quot; column.</p><ul><li>If the Team has members, this value will be the current Package Count. Clicking
+this value will bring you to the Packages tab for this team.
+</li>
 <li>If the Team does not have any package access, this value will read &quot;add packages&quot;.
-Clicking this value will bring you to the Manage Package Access page.</li>
-</ul>
+Clicking this value will bring you to the Manage Package Access page.
+</li></ul>
 <p>You can also navigate to your Team page directly by point your browser at
-<code>https://www.npmjs.com/org/&lt;org_name&gt;/teams/&lt;team_name&gt;</code>.</p>
-<p>From there, click the &quot;Packages&quot; tab. You&apos;ll use this interface to manage the
-package access of your Team.</p>
-<h2 id="adding-package-access-to-a-team"><a name="adding-package-access-to-a-team" class="plugin-anchor" href="#adding-package-access-to-a-team"><i class="fa fa-link" aria-hidden="true"></i></a>Adding Package Access to a Team</h2>
-<h2 id="removing-package-access-from-a-team"><a name="removing-package-access-from-a-team" class="plugin-anchor" href="#removing-package-access-from-a-team"><i class="fa fa-link" aria-hidden="true"></i></a>Removing Package Access from a Team</h2>
-
+<code>https://www.npmjs.com/org/&lt;org_name&gt;/teams/&lt;team_name&gt;</code>.</p><p>From there, click the &quot;Packages&quot; tab. You&apos;ll use this interface to manage the
+package access of your Team.</p><h2 id="adding-package-access-to-a-team"><a name="adding-package-access-to-a-team" class="plugin-anchor" href="#adding-package-access-to-a-team"><i class="fa fa-link" aria-hidden="true"></i></a>Adding Package Access to a Team</h2><h2 id="removing-package-access-from-a-team"><a name="removing-package-access-from-a-team" class="plugin-anchor" href="#removing-package-access-from-a-team"><i class="fa fa-link" aria-hidden="true"></i></a>Removing Package Access from a Team</h2>
                                 
                                 </section>
                             
@@ -384,10 +401,13 @@ package access of your Team.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Managing Package Access","level":"1.9","depth":1,"next":{"title":"Migrating a User Account","level":"1.10","depth":1,"path":"migrating-a-user-account.md","ref":"migrating-a-user-account.md","articles":[]},"previous":{"title":"Configuring npm for your Org","level":"1.8","depth":1,"path":"configuring-npm-for-your-org.md","ref":"configuring-npm-for-your-org.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"npm Orgs Documentation","gitbook":"*"},"file":{"path":"managing-package-access.md","mtime":"2017-03-22T19:46:00.177Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-22T19:47:24.099Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Managing Package Access","level":"1.9","depth":1,"next":{"title":"Migrating a User Account","level":"1.10","depth":1,"path":"migrating-a-user-account.md","ref":"migrating-a-user-account.md","articles":[]},"previous":{"title":"Configuring npm for your Org","level":"1.8","depth":1,"path":"configuring-npm-for-your-org.md","ref":"configuring-npm-for-your-org.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"npm Orgs Documentation","gitbook":"*"},"file":{"path":"managing-package-access.md","mtime":"2017-03-22T19:47:14.330Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2017-03-22T19:49:39.801Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
+
+
+    <script src="/scripts/bundle.js"></script>
 
         
     <script src="gitbook/gitbook.js"></script>

@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>The Developers Team · npm Orgs Documentation</title>
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="GitBook 3.2.0">
         
         
         
@@ -72,6 +72,33 @@
     </head>
     <body>
         
+    <header class="anonymous">
+      <div class="header-item header-nav-menu-container">
+        <a href="#" id="npm-expansions" class="npm-expansions" data-event-trigger="click" data-event-name="npm-expansions">node package manager</a>
+
+        <div class="nav-menu-container" role="navigation">
+          <a class="nav-toggle drop-down-menu-toggle" href="#product-navigation"><span class="a11y-only">Toggle Navigation</span>
+            <svg viewBox="0 0 44 44">
+              <rect x="4" y="12" fill="currentColor" width="36" height="2"/>
+              <rect x="4" y="20" fill="currentColor" width="36" height="2"/>
+              <rect x="4" y="28" fill="currentColor" width="36" height="2"/>
+            </svg>
+          </a>
+          <div class="drop-down-menu-container" role="menu">
+            <nav id="product-navigation" class="product-navigation drop-down-menu">
+              <ul class="drop-down-menu-section products-list">
+                <li><a id="nav-enterprise-link" href="https://www.npmjs.com/npm/enterprise">npm Enterprise</a></li>
+                <li><a id="nav-features-link" href="https://www.npmjs.com/features" data-event-trigger="click" data-event-name="features-nav-link">features</a></li>
+                <li><a id="nav-pricing-link" href="https://www.npmjs.com/pricing">pricing</a></li>
+                <li><a id="nav-docs-link" href="https://docs.npmjs.com">documentation</a></li>
+                <li><a id="nav-support-link" href="https://www.npmjs.com/support">support</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    
 <div class="book">
     <div class="book-summary">
         
@@ -309,64 +336,51 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="the-developers-team"><a name="the-developers-team" class="plugin-anchor" href="#the-developers-team"><i class="fa fa-link" aria-hidden="true"></i></a>The Developers Team</h1>
-<p>The <strong>Developers Team</strong> is a <em>special</em> Team that is automatically
+                                <h1 id="the-developers-team"><a name="the-developers-team" class="plugin-anchor" href="#the-developers-team"><i class="fa fa-link" aria-hidden="true"></i></a>The Developers Team</h1><p>The <strong>Developers Team</strong> is a <em>special</em> Team that is automatically
 created when you create an Organization. This page will teach you about
 the special properties of this Team, as well as walk through what
-happens when you delete this Team, and how to reinstate it.</p>
-<hr>
+happens when you delete this Team, and how to reinstate it.</p><hr>
 
-<h2 id="special-defaults"><a name="special-defaults" class="plugin-anchor" href="#special-defaults"><i class="fa fa-link" aria-hidden="true"></i></a>Special Defaults</h2>
-<p>When an Organization is first created, a Team called &quot;developers&quot;. This
+
+
+<h2 id="special-defaults"><a name="special-defaults" class="plugin-anchor" href="#special-defaults"><i class="fa fa-link" aria-hidden="true"></i></a>Special Defaults</h2><p>When an Organization is first created, a Team called &quot;developers&quot;. This
 team is <em>special</em> because it has pre-built membership and package access
-defaults created for your convenience.</p>
-<h3 id="members"><a name="members" class="plugin-anchor" href="#members"><i class="fa fa-link" aria-hidden="true"></i></a>Members</h3>
-<p>Members are automatically added to the Developers team:</p>
-<ul>
-<li>The user who created the Organization is added to this team automatically.</li>
+defaults created for your convenience.</p><h3 id="members"><a name="members" class="plugin-anchor" href="#members"><i class="fa fa-link" aria-hidden="true"></i></a>Members</h3><p>Members are automatically added to the Developers team:</p><ul><li>The user who created the Organization is added to this team automatically.
+</li>
 <li>Any member added to the Organization is also added to this
-team automatically.</li>
-</ul>
+team automatically.
+</li></ul>
 <p>If an Owner adds a new Member to an Organization and <strong>does not</strong> want
 that Member to be on the Developers team, an Owner can remove them. 
-(<a href="managing-teams.html">Learn more about managing teams</a>).</p>
-<h3 id="package-access"><a name="package-access" class="plugin-anchor" href="#package-access"><i class="fa fa-link" aria-hidden="true"></i></a>Package Access</h3>
-<p><strong>By default, the developers team has read/write access to all new packages
-created under the Organization&apos;s scope.</strong> </p>
-<p>A nice side effect of this default is that the <a href="https://docs.npmjs.com/files/package.json#people-fields-author-contributors" target="_blank"><code>maintainers</code> field</a> in 
+(<a href="managing-teams.html">Learn more about managing teams</a>).</p><h3 id="package-access"><a name="package-access" class="plugin-anchor" href="#package-access"><i class="fa fa-link" aria-hidden="true"></i></a>Package Access</h3><p><strong>By default, the developers team has read/write access to all new packages
+created under the Organization&apos;s scope.</strong></p><p>A nice side effect of this default is that the <a href="https://docs.npmjs.com/files/package.json#people-fields-author-contributors" target="_blank"><code>maintainers</code> field</a> in 
 the <a href="https://docs.npmjs.com/files/package.json" target="_blank"><code>package.json</code></a> of any newly created packages under the Organization scope
-is automatically populated with the members of the current Developers team. </p>
-<p>If you create a new package under your Organization&apos;s scope and you do not
+is automatically populated with the members of the current Developers team.</p><p>If you create a new package under your Organization&apos;s scope and you do not
 want members of the Developers Team to have Read/Write access to that 
 package, an Owner or Admin can remove the Developers Team&apos;s access to that
-package. (<a href="managing-package-access.html">Learn more about managing Package Access</a>).</p>
-<h2 id="removing-the-developers-team"><a name="removing-the-developers-team" class="plugin-anchor" href="#removing-the-developers-team"><i class="fa fa-link" aria-hidden="true"></i></a>Removing the Developers Team</h2>
-<p>An Owner or an Admin can delete the Developers team. If the Developers team
-is deleted:</p>
-<ul>
-<li>Newly added Members of the Organization will not be automatically added to
-any team.</li>
+package. (<a href="managing-package-access.html">Learn more about managing Package Access</a>).</p><h2 id="removing-the-developers-team"><a name="removing-the-developers-team" class="plugin-anchor" href="#removing-the-developers-team"><i class="fa fa-link" aria-hidden="true"></i></a>Removing the Developers Team</h2><p>An Owner or an Admin can delete the Developers team. If the Developers team
+is deleted:</p><ul><li>Newly added Members of the Organization will not be automatically added to
+any team.
+</li>
 <li>Any package access that current Members had because they were a member of
-the Developers Team will be removed.</li>
+the Developers Team will be removed.
+</li>
 <li>npm will attempt to fill the <a href="https://docs.npmjs.com/files/package.json#people-fields-author-contributors" target="_blank"><code>maintainers</code> field</a> in <a href="https://docs.npmjs.com/files/package.json" target="_blank"><code>package.json</code></a> of
 any newly created packages under the Organization scope with the members of
-a Team the publishing user is a Member of. This behavior is not predictable.</li>
-</ul>
-<h2 id="reinstating-the-developers-team"><a name="reinstating-the-developers-team" class="plugin-anchor" href="#reinstating-the-developers-team"><i class="fa fa-link" aria-hidden="true"></i></a>Reinstating the Developers Team</h2>
-<p>An Owner or Admin can &quot;reinstate&quot; the Developers team by creating a new team
+a Team the publishing user is a Member of. This behavior is not predictable.
+</li></ul>
+<h2 id="reinstating-the-developers-team"><a name="reinstating-the-developers-team" class="plugin-anchor" href="#reinstating-the-developers-team"><i class="fa fa-link" aria-hidden="true"></i></a>Reinstating the Developers Team</h2><p>An Owner or Admin can &quot;reinstate&quot; the Developers team by creating a new team
 with the name &quot;developers&quot;. This &quot;new&quot; Developers team will have all the 
-default behavior of the original Developers team:</p>
-<ul>
-<li>All Members added to the Organization after the Developers Team is 
-reinstated will be automatically added to the Developers Team</li>
+default behavior of the original Developers team:</p><ul><li>All Members added to the Organization after the Developers Team is 
+reinstated will be automatically added to the Developers Team
+</li>
 <li>All Members of the Developers team will automatically have Read/Write access
-to all new packages created under the Organization scope</li>
-</ul>
+to all new packages created under the Organization scope
+</li></ul>
 <p>You <strong>will</strong> need to manually add any members of the Organization that existed
 before the Developers team was &quot;reinstated&quot; if you&apos;d like them to also 
 experience the special Developers Team defaults. 
 (<a href="managing-teams.html">Learn more about managing teams</a>).</p>
-
                                 
                                 </section>
                             
@@ -409,10 +423,13 @@ experience the special Developers Team defaults.
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"The Developers Team","level":"1.5","depth":1,"next":{"title":"Managing Teams","level":"1.6","depth":1,"path":"managing-teams.md","ref":"managing-teams.md","articles":[]},"previous":{"title":"Managing Members","level":"1.4","depth":1,"path":"managing-members.md","ref":"managing-members.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"npm Orgs Documentation","gitbook":"*"},"file":{"path":"the-developers-team.md","mtime":"2017-03-22T19:46:00.177Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-22T19:47:24.099Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"The Developers Team","level":"1.5","depth":1,"next":{"title":"Managing Teams","level":"1.6","depth":1,"path":"managing-teams.md","ref":"managing-teams.md","articles":[]},"previous":{"title":"Managing Members","level":"1.4","depth":1,"path":"managing-members.md","ref":"managing-members.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"npm Orgs Documentation","gitbook":"*"},"file":{"path":"the-developers-team.md","mtime":"2017-03-22T19:47:14.346Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2017-03-22T19:49:39.801Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
+
+
+    <script src="/scripts/bundle.js"></script>
 
         
     <script src="gitbook/gitbook.js"></script>

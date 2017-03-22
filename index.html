@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>Introduction · npm Orgs Documentation</title>
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="GitBook 3.2.0">
         
         
         
@@ -70,6 +70,33 @@
     </head>
     <body>
         
+    <header class="anonymous">
+      <div class="header-item header-nav-menu-container">
+        <a href="#" id="npm-expansions" class="npm-expansions" data-event-trigger="click" data-event-name="npm-expansions">node package manager</a>
+
+        <div class="nav-menu-container" role="navigation">
+          <a class="nav-toggle drop-down-menu-toggle" href="#product-navigation"><span class="a11y-only">Toggle Navigation</span>
+            <svg viewBox="0 0 44 44">
+              <rect x="4" y="12" fill="currentColor" width="36" height="2"/>
+              <rect x="4" y="20" fill="currentColor" width="36" height="2"/>
+              <rect x="4" y="28" fill="currentColor" width="36" height="2"/>
+            </svg>
+          </a>
+          <div class="drop-down-menu-container" role="menu">
+            <nav id="product-navigation" class="product-navigation drop-down-menu">
+              <ul class="drop-down-menu-section products-list">
+                <li><a id="nav-enterprise-link" href="https://www.npmjs.com/npm/enterprise">npm Enterprise</a></li>
+                <li><a id="nav-features-link" href="https://www.npmjs.com/features" data-event-trigger="click" data-event-name="features-nav-link">features</a></li>
+                <li><a id="nav-pricing-link" href="https://www.npmjs.com/pricing">pricing</a></li>
+                <li><a id="nav-docs-link" href="https://docs.npmjs.com">documentation</a></li>
+                <li><a id="nav-support-link" href="https://www.npmjs.com/support">support</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    
 <div class="book">
     <div class="book-summary">
         
@@ -307,48 +334,38 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="npm-orgs"><a name="npm-orgs" class="plugin-anchor" href="#npm-orgs"><i class="fa fa-link" aria-hidden="true"></i></a>npm Orgs</h1>
-<p><em>This is a top-level introduction to Orgs. If you already know what Orgs are
-and want to get up and running, you should jump ahead to &quot;Getting Started&quot;.</em></p>
-<hr>
+                                <h1 id="npm-orgs"><a name="npm-orgs" class="plugin-anchor" href="#npm-orgs"><i class="fa fa-link" aria-hidden="true"></i></a>npm Orgs</h1><p><em>This is a top-level introduction to Orgs. If you already know what Orgs are
+and want to get up and running, you should jump ahead to &quot;Getting Started&quot;.</em></p><hr>
+
+
 
 <p>Orgs is a tool for organization, both of packages and teams of developers.
 It was created out of the need by many package publishers to handle
-large numbers of contributors over a set of many packages.</p>
-<h2 id="organizing-packages"><a name="organizing-packages" class="plugin-anchor" href="#organizing-packages"><i class="fa fa-link" aria-hidden="true"></i></a>Organizing Packages</h2>
-<p>Creating an organization on npm gives you an organization scope under
+large numbers of contributors over a set of many packages.</p><h2 id="organizing-packages"><a name="organizing-packages" class="plugin-anchor" href="#organizing-packages"><i class="fa fa-link" aria-hidden="true"></i></a>Organizing Packages</h2><p>Creating an organization on npm gives you an organization scope under
 which you can have your own namespace for packages. The organization
 scope is the name of the organization, as registered on npm. For
 example, if your organization is called &quot;the best&quot;, you would register
 as &quot;the-best&quot; and get a scope, <code>@the-best</code>. From there, you could name
-your packages whatever you want (according to our guidelines).</p>
-<p>Scopes are great for many reasons, some examples:</p>
-<ul>
-<li>maintain a fork of a package, e.g. <code>@the-best/request</code></li>
-<li>avoiding name disputes with popular names, e.g. <code>@the-best/cat</code></li>
+your packages whatever you want (according to our guidelines).</p><p>Scopes are great for many reasons, some examples:</p><ul><li>maintain a fork of a package, e.g. <code>@the-best/request</code>
+</li>
+<li>avoiding name disputes with popular names, e.g. <code>@the-best/cat</code>
+</li>
 <li>improving internal discovery of organization supported packages
-(they&apos;re all in a single namespace!)</li>
-</ul>
+(they&apos;re all in a single namespace!)
+</li></ul>
 <p>While you get a scope by default when registering as an Org, that doesn&apos;t
 mean you <em>have</em> to use it. In fact, you can use Orgs to manage unscoped
 packages, or even packages under a different scope, such as a user scope,
-e.g. <code>@ag_dubs/hello</code>, where <code>ag_dubs</code> is an npm user.</p>
-<h2 id="organizing-people"><a name="organizing-people" class="plugin-anchor" href="#organizing-people"><i class="fa fa-link" aria-hidden="true"></i></a>Organizing People</h2>
-<p>The real benefit of Orgs is that it makes it better, and in some cases,
+e.g. <code>@ag_dubs/hello</code>, where <code>ag_dubs</code> is an npm user.</p><h2 id="organizing-people"><a name="organizing-people" class="plugin-anchor" href="#organizing-people"><i class="fa fa-link" aria-hidden="true"></i></a>Organizing People</h2><p>The real benefit of Orgs is that it makes it better, and in some cases,
 simply <em>possible</em>, to manage access and visibility of packages across
-a large team of contributors.</p>
-<p>When using Orgs, you organize your developers into Teams. You can then
+a large team of contributors.</p><p>When using Orgs, you organize your developers into Teams. You can then
 grant team permissions (read/write) to pacakges you govern, which then
 cascades to all members of that team. By doing this, you can have certain
 teams that develop a package (write access) and then some teams that can use
 that package (read access). You can do this for all of the packages that
 the organization governs, public unscoped packages and public/private
-scoped packages alike.</p>
-<h2 id="what-does-orgs-cost"><a name="what-does-orgs-cost" class="plugin-anchor" href="#what-does-orgs-cost"><i class="fa fa-link" aria-hidden="true"></i></a>What does Orgs cost?</h2>
-<p>Orgs are <strong>free</strong> if your organization only has public packages.</p>
-<p>If your organization needs to also publish and install <strong>private packages</strong>,
+scoped packages alike.</p><h2 id="what-does-orgs-cost"><a name="what-does-orgs-cost" class="plugin-anchor" href="#what-does-orgs-cost"><i class="fa fa-link" aria-hidden="true"></i></a>What does Orgs cost?</h2><p>Orgs are <strong>free</strong> if your organization only has public packages.</p><p>If your organization needs to also publish and install <strong>private packages</strong>,
 an Org will cost you $7/user/month, for all users.</p>
-
                                 
                                 </section>
                             
@@ -387,10 +404,13 @@ an Org will cost you $7/user/month, for all users.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"Getting Started","level":"1.2","depth":1,"path":"getting-started.md","ref":"getting-started.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"npm Orgs Documentation","gitbook":"*"},"file":{"path":"INTRO.md","mtime":"2017-03-22T19:46:00.173Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-22T19:47:24.099Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"Getting Started","level":"1.2","depth":1,"path":"getting-started.md","ref":"getting-started.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"npm Orgs Documentation","gitbook":"*"},"file":{"path":"INTRO.md","mtime":"2017-03-22T19:47:14.326Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2017-03-22T19:49:39.801Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
+
+
+    <script src="/scripts/bundle.js"></script>
 
         
     <script src="gitbook/gitbook.js"></script>

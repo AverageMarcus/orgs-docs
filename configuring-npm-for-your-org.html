@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>Configuring npm for your Org · npm Orgs Documentation</title>
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="GitBook 3.2.0">
         
         
         
@@ -72,6 +72,33 @@
     </head>
     <body>
         
+    <header class="anonymous">
+      <div class="header-item header-nav-menu-container">
+        <a href="#" id="npm-expansions" class="npm-expansions" data-event-trigger="click" data-event-name="npm-expansions">node package manager</a>
+
+        <div class="nav-menu-container" role="navigation">
+          <a class="nav-toggle drop-down-menu-toggle" href="#product-navigation"><span class="a11y-only">Toggle Navigation</span>
+            <svg viewBox="0 0 44 44">
+              <rect x="4" y="12" fill="currentColor" width="36" height="2"/>
+              <rect x="4" y="20" fill="currentColor" width="36" height="2"/>
+              <rect x="4" y="28" fill="currentColor" width="36" height="2"/>
+            </svg>
+          </a>
+          <div class="drop-down-menu-container" role="menu">
+            <nav id="product-navigation" class="product-navigation drop-down-menu">
+              <ul class="drop-down-menu-section products-list">
+                <li><a id="nav-enterprise-link" href="https://www.npmjs.com/npm/enterprise">npm Enterprise</a></li>
+                <li><a id="nav-features-link" href="https://www.npmjs.com/features" data-event-trigger="click" data-event-name="features-nav-link">features</a></li>
+                <li><a id="nav-pricing-link" href="https://www.npmjs.com/pricing">pricing</a></li>
+                <li><a id="nav-docs-link" href="https://docs.npmjs.com">documentation</a></li>
+                <li><a id="nav-support-link" href="https://www.npmjs.com/support">support</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    
 <div class="book">
     <div class="book-summary">
         
@@ -309,55 +336,40 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="configuring-npm-for-your-org"><a name="configuring-npm-for-your-org" class="plugin-anchor" href="#configuring-npm-for-your-org"><i class="fa fa-link" aria-hidden="true"></i></a>Configuring npm for Your Org</h1>
-<p>The npm CLI is configurable! <a href="https://docs.npmjs.com/misc/config" target="_blank">Learn more about configuring npm</a>.</p>
-<p>This page will teach you how to configure your npm for your 
-Organization&apos;s scope and plan. Specifically, it will show you how:</p>
-<ul>
-<li>to make all new packages default to your Organization&apos;s scope </li>
+                                <h1 id="configuring-npm-for-your-org"><a name="configuring-npm-for-your-org" class="plugin-anchor" href="#configuring-npm-for-your-org"><i class="fa fa-link" aria-hidden="true"></i></a>Configuring npm for Your Org</h1><p>The npm CLI is configurable! <a href="https://docs.npmjs.com/misc/config" target="_blank">Learn more about configuring npm</a>.</p><p>This page will teach you how to configure your npm for your 
+Organization&apos;s scope and plan. Specifically, it will show you how:</p><ul><li>to make all new packages default to your Organization&apos;s scope 
+</li>
 <li>to make all new packages have a default access, either public or 
-private</li>
-</ul>
+private
+</li></ul>
 <p>In order to configure your npm, you&apos;ll need npm installed. If you need
-help installing npm, check out this <a href="https://www.npmjs.com/get-npm" target="_blank">doc</a>.</p>
-<hr>
+help installing npm, check out this <a href="https://www.npmjs.com/get-npm" target="_blank">doc</a>.</p><hr>
 
-<h2 id="configuring-npm-for-your-scope"><a name="configuring-npm-for-your-scope" class="plugin-anchor" href="#configuring-npm-for-your-scope"><i class="fa fa-link" aria-hidden="true"></i></a>Configuring npm for Your Scope</h2>
-<p>If you intend on publishing packages with your Organization scope more
+
+
+<h2 id="configuring-npm-for-your-scope"><a name="configuring-npm-for-your-scope" class="plugin-anchor" href="#configuring-npm-for-your-scope"><i class="fa fa-link" aria-hidden="true"></i></a>Configuring npm for Your Scope</h2><p>If you intend on publishing packages with your Organization scope more
 often that not, you may want to add your Organization scope to your
-global <code>.npmrc</code> file. <a href="https://docs.npmjs.com/files/npmrc" target="_blank">Learn more about the <code>.npmrc</code> file</a>.</p>
-<p>To set your Organization scope globally for your instance of the npm
-CLI, use this command:</p>
-<pre><code>npm config set scope &lt;org_scope&gt; --global
-</code></pre><p>If you&apos;d like to do it just for a single package, remove the <code>--global</code>
-flag. <a href="https://docs.npmjs.com/cli/config" target="_blank">Learn more about the CLI <code>config</code> command</a>.</p>
-<p>Once you issue this command, all packages that you create with 
-<code>npm init</code> will be scoped to your Organization scope. </p>
-<p>To verify this, create a new package with <code>npm init</code>. Open the
+global <code>.npmrc</code> file. <a href="https://docs.npmjs.com/files/npmrc" target="_blank">Learn more about the <code>.npmrc</code> file</a>.</p><p>To set your Organization scope globally for your instance of the npm
+CLI, use this command:</p><pre><code>npm config set scope &lt;org_scope&gt; --global</code></pre>
+<p>If you&apos;d like to do it just for a single package, remove the <code>--global</code>
+flag. <a href="https://docs.npmjs.com/cli/config" target="_blank">Learn more about the CLI <code>config</code> command</a>.</p><p>Once you issue this command, all packages that you create with 
+<code>npm init</code> will be scoped to your Organization scope.</p><p>To verify this, create a new package with <code>npm init</code>. Open the
 generated <code>package.json</code> and view the <code>name</code> property. If you 
 successfully configured npm, you should see your Organization&apos;s
-scope preceding the packages name in the <code>name</code> property.</p>
-<p>For packages you do not want to publish with the Organization&apos;s
+scope preceding the packages name in the <code>name</code> property.</p><p>For packages you do not want to publish with the Organization&apos;s
 scope, you can manually edit the generated <code>package.json</code>, removing
-the Organization scope from the <code>name</code> field.</p>
-<h2 id="configuring-npm-for-your-org-plan"><a name="configuring-npm-for-your-org-plan" class="plugin-anchor" href="#configuring-npm-for-your-org-plan"><i class="fa fa-link" aria-hidden="true"></i></a>Configuring npm for Your Org Plan</h2>
-<p>By default, any scoped package is published as private. However, if you have
+the Organization scope from the <code>name</code> field.</p><h2 id="configuring-npm-for-your-org-plan"><a name="configuring-npm-for-your-org-plan" class="plugin-anchor" href="#configuring-npm-for-your-org-plan"><i class="fa fa-link" aria-hidden="true"></i></a>Configuring npm for Your Org Plan</h2><p>By default, any scoped package is published as private. However, if you have
 an Org that does not have the Private Packages feature, <code>npm publish</code> will
 fail unless you pass the <code>access</code> flag.
-(<a href="publishing-an-org-scoped-package.html">Learn more about publishing scoped packages</a>).</p>
-<p>This can be tedious if you have to do it all the time. If you know that a 
+(<a href="publishing-an-org-scoped-package.html">Learn more about publishing scoped packages</a>).</p><p>This can be tedious if you have to do it all the time. If you know that a 
 package will be public, you can set this in your per package <code>.npmrc</code> by
-issuing the following command:</p>
-<pre><code>npm config set access public
-</code></pre><p>This command will pass <code>--access public</code> to every <code>npm publish</code> command that
+issuing the following command:</p><pre><code>npm config set access public</code></pre>
+<p>This command will pass <code>--access public</code> to every <code>npm publish</code> command that
 you issue for that package. You can also set this globally, similar to the
-above example about setting scope, by passing the <code>--global</code> flag to the command.</p>
-<p>Setting the <code>access</code> property in your global <code>.npmrc</code> will affect all packages,
+above example about setting scope, by passing the <code>--global</code> flag to the command.</p><p>Setting the <code>access</code> property in your global <code>.npmrc</code> will affect all packages,
 including packages that are scoped to your Organization, as well as your personal
-user scope.</p>
-<p>Be careful with this! You don&apos;t want to accidentally publish a private package
+user scope.</p><p>Be careful with this! You don&apos;t want to accidentally publish a private package
 as a public one.</p>
-
                                 
                                 </section>
                             
@@ -400,10 +412,13 @@ as a public one.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Configuring npm for your Org","level":"1.8","depth":1,"next":{"title":"Managing Package Access","level":"1.9","depth":1,"path":"managing-package-access.md","ref":"managing-package-access.md","articles":[]},"previous":{"title":"Publishing an Org Scoped Package","level":"1.7","depth":1,"path":"publishing-an-org-scoped-package.md","ref":"publishing-an-org-scoped-package.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"npm Orgs Documentation","gitbook":"*"},"file":{"path":"configuring-npm-for-your-org.md","mtime":"2017-03-22T19:46:00.173Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-22T19:47:24.099Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Configuring npm for your Org","level":"1.8","depth":1,"next":{"title":"Managing Package Access","level":"1.9","depth":1,"path":"managing-package-access.md","ref":"managing-package-access.md","articles":[]},"previous":{"title":"Publishing an Org Scoped Package","level":"1.7","depth":1,"path":"publishing-an-org-scoped-package.md","ref":"publishing-an-org-scoped-package.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"npm Orgs Documentation","gitbook":"*"},"file":{"path":"configuring-npm-for-your-org.md","mtime":"2017-03-22T19:47:14.326Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2017-03-22T19:49:39.801Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
+
+
+    <script src="/scripts/bundle.js"></script>
 
         
     <script src="gitbook/gitbook.js"></script>

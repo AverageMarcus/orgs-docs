@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>Publishing an Org Scoped Package · npm Orgs Documentation</title>
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="GitBook 3.2.0">
         
         
         
@@ -72,6 +72,33 @@
     </head>
     <body>
         
+    <header class="anonymous">
+      <div class="header-item header-nav-menu-container">
+        <a href="#" id="npm-expansions" class="npm-expansions" data-event-trigger="click" data-event-name="npm-expansions">node package manager</a>
+
+        <div class="nav-menu-container" role="navigation">
+          <a class="nav-toggle drop-down-menu-toggle" href="#product-navigation"><span class="a11y-only">Toggle Navigation</span>
+            <svg viewBox="0 0 44 44">
+              <rect x="4" y="12" fill="currentColor" width="36" height="2"/>
+              <rect x="4" y="20" fill="currentColor" width="36" height="2"/>
+              <rect x="4" y="28" fill="currentColor" width="36" height="2"/>
+            </svg>
+          </a>
+          <div class="drop-down-menu-container" role="menu">
+            <nav id="product-navigation" class="product-navigation drop-down-menu">
+              <ul class="drop-down-menu-section products-list">
+                <li><a id="nav-enterprise-link" href="https://www.npmjs.com/npm/enterprise">npm Enterprise</a></li>
+                <li><a id="nav-features-link" href="https://www.npmjs.com/features" data-event-trigger="click" data-event-name="features-nav-link">features</a></li>
+                <li><a id="nav-pricing-link" href="https://www.npmjs.com/pricing">pricing</a></li>
+                <li><a id="nav-docs-link" href="https://docs.npmjs.com">documentation</a></li>
+                <li><a id="nav-support-link" href="https://www.npmjs.com/support">support</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    
 <div class="book">
     <div class="book-summary">
         
@@ -309,54 +336,40 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="publishing-an-org-scoped-package"><a name="publishing-an-org-scoped-package" class="plugin-anchor" href="#publishing-an-org-scoped-package"><i class="fa fa-link" aria-hidden="true"></i></a>Publishing an Org Scoped Package</h1>
-<p>One of the great benefits of using an Organization is that you can
+                                <h1 id="publishing-an-org-scoped-package"><a name="publishing-an-org-scoped-package" class="plugin-anchor" href="#publishing-an-org-scoped-package"><i class="fa fa-link" aria-hidden="true"></i></a>Publishing an Org Scoped Package</h1><p>One of the great benefits of using an Organization is that you can
 publish packages, publicly or privately, under a shared namespace,
 called the <strong>Organization scope</strong>. This is similar to a user 
 namespace, or <strong>User scope</strong>, however an Organization scope makes
 it much easier to manage package access for multiple packages and
-multiple users.</p>
-<p>This page will teach you how to publish an Organization scoped package,
+multiple users.</p><p>This page will teach you how to publish an Organization scoped package,
 both publicly and privately. This page will also teach you how to
 configure you npm so that it automatically creates packages with your
-Organization scope.</p>
-<p>Don&apos;t forget that all Members of an Organization are immediately added
+Organization scope.</p><p>Don&apos;t forget that all Members of an Organization are immediately added
 to a Developers team that automatically has Read/Write access to all
 packages published under an Organization scope. 
-(<a href="the-developers-team.html">Learn more about the Developers Team</a>)</p>
-<hr>
+(<a href="the-developers-team.html">Learn more about the Developers Team</a>)</p><hr>
 
-<h2 id="creating-a-new-scoped-package"><a name="creating-a-new-scoped-package" class="plugin-anchor" href="#creating-a-new-scoped-package"><i class="fa fa-link" aria-hidden="true"></i></a>Creating a New Scoped Package</h2>
-<p>To create a new scoped package for your Organization scope, create
+
+
+<h2 id="creating-a-new-scoped-package"><a name="creating-a-new-scoped-package" class="plugin-anchor" href="#creating-a-new-scoped-package"><i class="fa fa-link" aria-hidden="true"></i></a>Creating a New Scoped Package</h2><p>To create a new scoped package for your Organization scope, create
 a directory with the name of the package you would like to create.
-Navigate into that directory and use this command:</p>
-<pre><code>npm init --scope=&lt;org_scope&gt;
-</code></pre><p>To verify that this worked, open the generated <code>package.json</code> with an
+Navigate into that directory and use this command:</p><pre><code>npm init --scope=&lt;org_scope&gt;</code></pre>
+<p>To verify that this worked, open the generated <code>package.json</code> with an
 editor of your choice. You should see that the name of the package
-will be <code>@org_scope/&lt;pkg_name&gt;</code>.</p>
-<h2 id="publishing-a-private-scoped-package"><a name="publishing-a-private-scoped-package" class="plugin-anchor" href="#publishing-a-private-scoped-package"><i class="fa fa-link" aria-hidden="true"></i></a>Publishing a Private Scoped Package</h2>
-<p>By default, <code>npm publish</code> will publish a scoped package as private.
-Therefore, to privately publish a scoped package as private, type:</p>
-<pre><code>npm publish
-</code></pre><p><a href="https://docs.npmjs.com/cli/publish" target="_blank">Learn more about the CLI <code>publish</code> command</a>.</p>
-<p>You can verify that this worked by going to your npm profile or your
+will be <code>@org_scope/&lt;pkg_name&gt;</code>.</p><h2 id="publishing-a-private-scoped-package"><a name="publishing-a-private-scoped-package" class="plugin-anchor" href="#publishing-a-private-scoped-package"><i class="fa fa-link" aria-hidden="true"></i></a>Publishing a Private Scoped Package</h2><p>By default, <code>npm publish</code> will publish a scoped package as private.
+Therefore, to privately publish a scoped package as private, type:</p><pre><code>npm publish</code></pre>
+<p><a href="https://docs.npmjs.com/cli/publish" target="_blank">Learn more about the CLI <code>publish</code> command</a>.</p><p>You can verify that this worked by going to your npm profile or your
 Organization&apos;s profile and look at the packages list. You should see
 your newly published package listed there. You will know it is private
-because there will be a small lock icon next to the package name.</p>
-<h2 id="publishing-a-public-scoped-package"><a name="publishing-a-public-scoped-package" class="plugin-anchor" href="#publishing-a-public-scoped-package"><i class="fa fa-link" aria-hidden="true"></i></a>Publishing a Public Scoped Package</h2>
-<p>By default all scoped packages are published privately. To publish a
+because there will be a small lock icon next to the package name.</p><h2 id="publishing-a-public-scoped-package"><a name="publishing-a-public-scoped-package" class="plugin-anchor" href="#publishing-a-public-scoped-package"><i class="fa fa-link" aria-hidden="true"></i></a>Publishing a Public Scoped Package</h2><p>By default all scoped packages are published privately. To publish a
 scoped package publicly, pass the <code>access</code> flag with the value 
-<code>public</code>:</p>
-<pre><code>npm publish --access public
-</code></pre><p><a href="https://docs.npmjs.com/cli/publish" target="_blank">Learn more about the CLI <code>publish</code> command</a>.</p>
-<p>You can verify that this worked by going to your npm profile or your
+<code>public</code>:</p><pre><code>npm publish --access public</code></pre>
+<p><a href="https://docs.npmjs.com/cli/publish" target="_blank">Learn more about the CLI <code>publish</code> command</a>.</p><p>You can verify that this worked by going to your npm profile or your
 Organization&apos;s profile and look at the packages list. You should see
 your newly published package listed there. You will know it is public
-because there will <em>not</em> be a small lock icon next to the package name.</p>
-<p>You can doubly verify this by opening a private browser tab and 
+because there will <em>not</em> be a small lock icon next to the package name.</p><p>You can doubly verify this by opening a private browser tab and 
 viewing your npm profile or your Organization&apos;s profile. The package
 should be present on both package listings.</p>
-
                                 
                                 </section>
                             
@@ -399,10 +412,13 @@ should be present on both package listings.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Publishing an Org Scoped Package","level":"1.7","depth":1,"next":{"title":"Configuring npm for your Org","level":"1.8","depth":1,"path":"configuring-npm-for-your-org.md","ref":"configuring-npm-for-your-org.md","articles":[]},"previous":{"title":"Managing Teams","level":"1.6","depth":1,"path":"managing-teams.md","ref":"managing-teams.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"npm Orgs Documentation","gitbook":"*"},"file":{"path":"publishing-an-org-scoped-package.md","mtime":"2017-03-22T19:46:00.177Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-22T19:47:24.099Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Publishing an Org Scoped Package","level":"1.7","depth":1,"next":{"title":"Configuring npm for your Org","level":"1.8","depth":1,"path":"configuring-npm-for-your-org.md","ref":"configuring-npm-for-your-org.md","articles":[]},"previous":{"title":"Managing Teams","level":"1.6","depth":1,"path":"managing-teams.md","ref":"managing-teams.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"npm Orgs Documentation","gitbook":"*"},"file":{"path":"publishing-an-org-scoped-package.md","mtime":"2017-03-22T19:47:14.330Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2017-03-22T19:49:39.801Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
+
+
+    <script src="/scripts/bundle.js"></script>
 
         
     <script src="gitbook/gitbook.js"></script>
