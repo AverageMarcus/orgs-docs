@@ -338,13 +338,69 @@
                                 
                                 <h1 id="migrating-a-user-account"><a name="migrating-a-user-account" class="plugin-anchor" href="#migrating-a-user-account"><i class="fa fa-link" aria-hidden="true"></i></a>Migrating a User Account</h1><p>You may already have an npm user account that you would now like to use
 as an Organization. This page will teach you how to convert an npm user
-account to an Organization.</p><hr>
+account to an Organization and explain what to expect to happen to
+the converted user&apos;s packages.</p><hr>
 
 
 
-<h2 id="why-migrate-your-account"><a name="why-migrate-your-account" class="plugin-anchor" href="#why-migrate-your-account"><i class="fa fa-link" aria-hidden="true"></i></a>Why migrate your account?</h2><p>It may not be clear at first glance why you would want to migrate a 
-current npm user account to an Organization. Let&apos;s talk about why
-you might want to do this.</p><h2 id="how-to-migrate"><a name="how-to-migrate" class="plugin-anchor" href="#how-to-migrate"><i class="fa fa-link" aria-hidden="true"></i></a>How to Migrate</h2><h4 id="1-login-as-the-npm-user-that-you-would-like-to-convert-to-an-organization"><a name="1-login-as-the-npm-user-that-you-would-like-to-convert-to-an-organization" class="plugin-anchor" href="#1-login-as-the-npm-user-that-you-would-like-to-convert-to-an-organization"><i class="fa fa-link" aria-hidden="true"></i></a>1. Login as the npm user that you would like to convert to an Organization.</h4><h4 id="2-click-the-create-an-organization-link-on-your-user-profile"><a name="2-click-the-create-an-organization-link-on-your-user-profile" class="plugin-anchor" href="#2-click-the-create-an-organization-link-on-your-user-profile"><i class="fa fa-link" aria-hidden="true"></i></a>2. Click the &quot;create an organization&quot; link on your user profile.</h4><h4 id="3-look-at-the-left-hand-column-click-the-upgrade-button"><a name="3-look-at-the-left-hand-column-click-the-upgrade-button" class="plugin-anchor" href="#3-look-at-the-left-hand-column-click-the-upgrade-button"><i class="fa fa-link" aria-hidden="true"></i></a>3. Look at the left hand column. Click the &quot;Upgrade&quot; button.</h4>
+<h2 id="what-happens-when-i-migrate"><a name="what-happens-when-i-migrate" class="plugin-anchor" href="#what-happens-when-i-migrate"><i class="fa fa-link" aria-hidden="true"></i></a>What happens when I migrate?</h2><ul><li>All org status, team memberships, and package access that your previous
+user account had will be transfered to your new account.
+</li>
+<li>You will no longer be able to sign in as the previous account name.
+</li>
+<li>You will create a new npm user account.
+</li>
+<li>Your old username will be used to create a new Organization of that name
+</li>
+<li>Your new npm user account will be an Owner role on the newly created Organization
+(<a href="roles-and-privileges.html">Learn more about Roles and Privileges</a>)
+</li></ul>
+<h1 id="how-to-migrate"><a name="how-to-migrate" class="plugin-anchor" href="#how-to-migrate"><i class="fa fa-link" aria-hidden="true"></i></a>How to Migrate</h1><p>When and if you choose to migrate your npm user account to an Organization,
+you will need to take the following steps:</p><h3 id="1-login-to-your-npm-account"><a name="1-login-to-your-npm-account" class="plugin-anchor" href="#1-login-to-your-npm-account"><i class="fa fa-link" aria-hidden="true"></i></a>1. Login to your npm Account</h3><p>Login as the npm user that you would like to convert to an Organization.
+Click the &quot;create an organization&quot; link on your user profile.</p><h3 id="2-start-the-user2orgs-workflow"><a name="2-start-the-user2orgs-workflow" class="plugin-anchor" href="#2-start-the-user2orgs-workflow"><i class="fa fa-link" aria-hidden="true"></i></a>2. Start the User2Orgs Workflow</h3><p>Once you are logged in, navigate to your profile page. From there, you
+should see three (3) links under the &quot;Your Account&quot; heading. Click
+&quot;create an organization&quot;.</p><p>If you are already logged in, you can also go directly to
+<a href="https://www.npmjs.com/org/create" target="_blank">https://www.npmjs.com/org/create</a>.</p><p>Look at the left hand column. Click the &quot;Upgrade&quot; button.</p><h3 id="3-create-a-new-personal-user"><a name="3-create-a-new-personal-user" class="plugin-anchor" href="#3-create-a-new-personal-user"><i class="fa fa-link" aria-hidden="true"></i></a>3. Create a New Personal User</h3><p>Since you are converting your current user account to an Organization, you&apos;ll
+need to create a new one to replace it.</p><p>After clicking upgrade, you should be on a screen where you will create a new
+npm user account. Enter the new username you would like to use for your personal
+account.</p><h3 id="4-choose-your-plan"><a name="4-choose-your-plan" class="plugin-anchor" href="#4-choose-your-plan"><i class="fa fa-link" aria-hidden="true"></i></a>4. Choose your plan</h3><p>Once you&apos;ve chosen a name for your new personal account, you&apos;ll need to choose
+a plan for your new Organization. Currently, npm offers 2 plans:</p><ul><li><strong>free</strong>: public packages only
+</li>
+<li><strong>paid</strong>: install and publish <strong>private packages</strong> ($7/user/month)
+</li></ul>
+<p>For example, if you have 3 users, an Organization that only needs public 
+packages will be entirely free. However, if your Organization needs to
+install and publish <strong>private packages</strong>, it will cost $21/month 
+($7/month*3 users).</p><p><strong>You can change your plan at anytime through the billing panel.</strong> For
+more information on the features of each plan, visit our <a href="https://www.npmjs.com/pricing" target="_blank">pricing page</a>.</p><p>Once you have chosen your plan, click the big red &quot;Create an Organization&quot;
+button.</p><h3 id="5-enter-payment-information-paid-orgs-only"><a name="5-enter-payment-information-paid-orgs-only" class="plugin-anchor" href="#5-enter-payment-information-paid-orgs-only"><i class="fa fa-link" aria-hidden="true"></i></a>5. Enter Payment Information (paid Orgs only)</h3><p>If you chose an Organization with access to Private Packages, clicking the
+big red &quot;Create an Organization&quot; button will bring up a Stripe Payments
+prompt. Enter the email address you&apos;d like associated with billing (this
+does <em>not</em> have to match the owner&apos;s email), as well as billing address
+and credit card information.</p><p><strong>You can change your billing info at anytime through your Organization&apos;s
+billing page.</strong></p><p>Your credit card will be immediately billed $7 for a single user, the
+account of the person creating the Organization.</p><h3 id="6-add-members-to-your-organization"><a name="6-add-members-to-your-organization" class="plugin-anchor" href="#6-add-members-to-your-organization"><i class="fa fa-link" aria-hidden="true"></i></a>6. Add Members to your Organization</h3><p>Now that you&apos;ve created your Organization, you are given the ability to add
+members. You can add members to your Organization at any time, so feel free
+to skip this step if you aren&apos;t ready to add users yet.</p><p>The user who created the Organization is:</p><ul><li>Automatically assigned the <strong>role</strong> of <strong>Owner</strong>. 
+<a href="roles-and-privileges.html">Learn more about Roles and Privileges</a>.
+</li>
+<li>Automatically added to a <strong>team</strong> called <strong>Developers</strong>. 
+<a href="the-developers-team.html">Learn more about the Developers Team</a>.
+</li></ul>
+<p>To add users to your Organization, enter their npm username into the text
+input and click the red button that says &quot;Invite&quot;. If you chose an
+Organization with Private Package access, every user will add an 
+additional $7/month to your bill.</p><p><strong>When you add a member to your Organization they are immediately added. They
+do not receive an email, so please let your new members know that you have added
+them.</strong></p><p>All the users you add from this interface are:</p><ul><li>Automatically assigned the <strong>role</strong> of <strong>Member</strong>.
+<a href="roles-and-privileges.html">Learn more about Roles and Privileges</a>.
+</li>
+<li>Automatically added to a <strong>team</strong> called <strong>Developers</strong>.
+<a href="the-developers-team.html">Learn more about the Developers Team</a>.
+</li></ul>
+<p>If the person you would  like to add to your Organization does not have an
+npm username, they&apos;ll need to create an npm user account. You can send them
+<a href="https://www.npmjs.com/signup" target="_blank">this link</a> to sign up.</p>
                                 
                                 </section>
                             
@@ -387,7 +443,7 @@ you might want to do this.</p><h2 id="how-to-migrate"><a name="how-to-migrate" c
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Migrating a User Account","level":"1.10","depth":1,"next":{"title":"Managing Billing","level":"1.11","depth":1,"path":"managing-billing.md","ref":"managing-billing.md","articles":[]},"previous":{"title":"Managing Package Access","level":"1.9","depth":1,"path":"managing-package-access.md","ref":"managing-package-access.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"npm Orgs Documentation","gitbook":"*"},"file":{"path":"migrating-a-user-account.md","mtime":"2017-03-22T19:59:31.848Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2017-03-22T20:01:56.113Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Migrating a User Account","level":"1.10","depth":1,"next":{"title":"Managing Billing","level":"1.11","depth":1,"path":"managing-billing.md","ref":"managing-billing.md","articles":[]},"previous":{"title":"Managing Package Access","level":"1.9","depth":1,"path":"managing-package-access.md","ref":"managing-package-access.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRO.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"npm Orgs Documentation","gitbook":"*"},"file":{"path":"migrating-a-user-account.md","mtime":"2017-03-22T21:17:30.375Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2017-03-22T21:19:59.668Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
